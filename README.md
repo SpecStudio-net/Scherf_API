@@ -62,6 +62,27 @@ modeled as separate conditioned entities at the *vyāvahārika* level.
 
 ---
 
+## Installation
+
+Pure Python, no runtime dependencies (Python 3.11+).
+
+```bash
+# From a local checkout:
+pip install .
+
+# Or directly from GitHub:
+pip install git+https://github.com/SpecStudio-net/Scherf_API
+```
+
+For development (editable install plus the test runner):
+
+```bash
+pip install -e ".[dev]"
+pytest
+```
+
+---
+
 ## Quick example
 
 ```python

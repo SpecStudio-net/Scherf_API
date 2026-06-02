@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scherf"
+version = "5.0.0"
+description = "Witness-centered AI foundation library — a Python encoding of Matthew Scherf's machine-verified Lean 4 formalization of Advaita Vedānta"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "SpecStudio" }]
+keywords = ["advaita", "vedanta", "witness", "sakshin", "ai-ethics", "guardrails", "lean4"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+# Pure standard-library; no runtime dependencies.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://github.com/SpecStudio-net/Scherf_API"
+Formalization = "https://github.com/matthew-scherf/Advaita"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scherf"]
+
+[tool.hatch.build.targets.sdist]
+include = ["scherf", "docs", "demo.py", "tests", "README.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
