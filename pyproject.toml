@@ -8,7 +8,8 @@ version = "5.0.0"
 description = "Witness-centered AI foundation library — a Python encoding of Matthew Scherf's machine-verified Lean 4 formalization of Advaita Vedānta"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { file = "LICENSE" }
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [{ name = "SpecStudio" }]
 keywords = ["advaita", "vedanta", "witness", "sakshin", "ai-ethics", "guardrails", "lean4"]
 classifiers = [
